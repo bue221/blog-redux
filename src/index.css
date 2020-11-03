@@ -14,3 +14,25 @@
 .tabla td {
   padding: 10px 0;
 }
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.error {
+  width: 30%;
+}
+
+.publis {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+.publi {
+  width: 100%;
+}
