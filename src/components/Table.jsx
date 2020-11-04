@@ -15,7 +15,7 @@ const TableU = ({ usuarios }) => {
   return (
     <>
       <TableContainer component={Paper}>
-        <Table aria-label="simple table">
+        <Table aria-label="simple table" size="small">
           <TableHead>
             <TableRow>
               <TableCell>Nombre</TableCell>

@@ -39,7 +39,12 @@ class index extends Component {
                 />
                 <div className="publis">
                   {this.props.publiReducer.publicaciones.map((i, index) => (
-                    <Card variant="outlined" className="publi" key={index}>
+                    <Card
+                      button
+                      variant="outlined"
+                      className="publi"
+                      key={index}
+                    >
                       <CardContent>
                         <Typography color="textSecondary" gutterBottom>
                           usuario {i.userId}
