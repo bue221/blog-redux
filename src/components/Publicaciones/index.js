@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 import Post from "../Post";
 
@@ -38,7 +39,7 @@ class index extends Component {
                 />
                 <div className="publis">
                   {this.props.publiReducer.publicaciones.map((i, index) => (
-                    <Card variant="outlined" className="publi">
+                    <Card variant="outlined" className="publi" key={index}>
                       <CardContent>
                         <Typography color="textSecondary" gutterBottom>
                           usuario {i.userId}
@@ -54,7 +55,9 @@ class index extends Component {
                         </Typography>
                       </CardContent>
                       <CardActions>
-                        <Button size="small">Leer mas...</Button>
+                        <Button size="small">
+                          <Link to={`/article/${i.id}`}>Leer mas...</Link>
+                        </Button>
                       </CardActions>
                     </Card>
                   ))}

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Users from "./Usuarios/index";
 import Post from "./Publicaciones/index";
 import Menu from "./Menu";
+import Article from "./Article";
 
 const App = () => (
   <>
@@ -11,6 +12,7 @@ const App = () => (
       <div>
         <Menu />
         <Switch>
+          <Route exact path="/article/:id" component={Article} />
           <Route exact path="/public/:key/:aut" component={Post} />
           <Route path="/tareas">
             <h1>Tareas</h1>

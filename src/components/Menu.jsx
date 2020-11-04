@@ -37,17 +37,22 @@ const Menu = () => {
         </Typography>
         <Button color="inherit">
           <Link className={classes.link} to="/">
-            Home
+            Inicio
           </Link>
         </Button>
         <Button color="inherit">
           <Link className={classes.link} to="/users">
-            Users
+            Usuarios
           </Link>
         </Button>
         <Button color="inherit">
-          <Link className={classes.link} to="/tareas">
-            Tareas
+          <Link className={classes.link} to="/public/0/Leanne%20Graham">
+            Publicaciones de ejemplo
+          </Link>
+        </Button>
+        <Button color="inherit">
+          <Link className={classes.link} to="/article/1">
+            Articulo de ejemplo
           </Link>
         </Button>
       </Toolbar>

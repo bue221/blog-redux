@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     flexDirection: "column",
     padding: "2rem",
+    marginTop: "2rem",
   },
 }));
 
