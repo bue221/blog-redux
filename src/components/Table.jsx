@@ -10,6 +10,7 @@ import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 
 import VisibilityIcon from "@material-ui/icons/Visibility";
+import IconButton from "@material-ui/core/IconButton";
 
 const TableU = ({ usuarios }) => {
   return (
@@ -36,8 +37,9 @@ const TableU = ({ usuarios }) => {
                 <TableCell align="right">{i.website}</TableCell>
                 <TableCell align="right">
                   <Link to={`/public/${index}/${i.name}`}>
-                    {" "}
-                    <VisibilityIcon />
+                    <IconButton color="primary">
+                      <VisibilityIcon />
+                    </IconButton>
                   </Link>
                 </TableCell>
               </TableRow>

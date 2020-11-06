@@ -30,14 +30,14 @@ const useStyles = makeStyles((theme) => ({
 const Menu = () => {
   const classes = useStyles();
   return (
-    <AppBar position="static">
-      <Toolbar>
+    <AppBar position="fixed">
+      <Toolbar variant="dense">
         <Typography variant="h6" className={classes.title}>
           Curso de redux | platzi Blog
         </Typography>
         <Button color="inherit">
-          <Link className={classes.link} to="/">
-            Inicio
+          <Link className={classes.link} to="/tareas">
+            Tareas
           </Link>
         </Button>
         <Button color="inherit">

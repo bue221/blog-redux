@@ -7,7 +7,20 @@ body {
 }
 
 .margen {
-  margin: 4rem;
+  margin: 6rem;
+}
+
+.Link {
+  text-decoration: none;
+  color: blue;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .tabla {
